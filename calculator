@@ -1,0 +1,46 @@
+# allows numbers imput and funtions are optional. 
+total = input('enter starting total')
+loop= 1
+while loop > 0:#allows the program to loop so that so funtions can be used multible times
+	option1 = input('do you want to add? y or n')
+	if option1 == 'y':
+		add = input('add')
+	else:
+		add = 0
+
+	option2 = input('do you want to take away? y or n')
+	if option2 =='y':
+		take_away = input('minus')
+	else:
+		take_away=0
+
+	option3 = input('do you want to multiply?y or n')
+	if option3 == 'y':
+		multiply = input('multiply')
+	else:
+		multiply =1
+
+	option4 = input('do you want to divide? y or n')
+	if option4 == 'y':
+		divide = input('divide')
+	else:
+		divide=1
+
+	#float allows the inputs to be entered as floats intead of str.
+
+	sum = float(total)  + float(add) 
+
+	sum -= float(take_away)
+
+	sum *= float(multiply)
+
+	sum /= float(divide)
+	toal = 0
+
+	loop_choice=input('keep looping?') 
+	if loop_choice == 'y':
+		loop = 1
+	else:
+		loop = 0
+
+print (sum)
