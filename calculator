@@ -1,4 +1,4 @@
-# allows numbers imput and funtions are optional. 
+# allows numbers imput and functions are optional. 
 total = input('enter starting total')
 loop= 1
 while loop > 0:#allows the program to loop so that so funtions can be used multible times
