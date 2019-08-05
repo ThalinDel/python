@@ -1,0 +1,65 @@
+total = input('''enter starting total   
+''')
+sum = float(total)#Sets the starting total outside of the loop so it does not keep changing the total.
+
+loop= 1
+
+while loop > 0: #Allows the program to loop so that so funtions can be used multible times.
+
+    Math_option =input('''choose functiobn +,-,/,x or =
+    ''') #Allows the user to select what funtion they want to choose in what order.
+    
+    
+
+    if Math_option == '+':
+
+        add = input ('''add
+        ''')#This allows the user to add.
+        sum += float(add)
+
+
+    elif Math_option == '-':
+
+        take_away = input('''minus
+        ''')#This allows the user to subtract.
+        sum -= float(take_away)
+
+
+    elif Math_option =='x'or math_option =='X':
+
+        multiply = input('''multiply
+        ''')#This allows the user to multiply.
+        sum *= float(multiply)
+
+
+    elif Math_option == '/':
+
+        divide = input('''divide
+        ''')#This allows the user to divide.
+        sum /= float(divide)
+
+
+    elif Math_option == '=':
+        #This allows the user to see their current result.
+        print ('''total
+    '''+ str(sum))
+
+
+    else:
+        print('please enter a valid funtion.')
+        #Lets the user know that they have enterned a incorrect funtion.
+
+
+    loop_choice=input('''do you want to use another funtion?  y or n
+    ''') #Allows the loop to be stoped when wanted.
+
+    if loop_choice == 'y' or loop_choice == 'Y' or loop_choice == 'yes' or loop_choice == 'Yes' or loop_choice == 'YES':
+        loop = 1
+    else:
+        
+        loop = 0 
+     
+        
+        print ('''final total
+        '''+ str(sum))
+        #Prints the final total when the user has finished.
